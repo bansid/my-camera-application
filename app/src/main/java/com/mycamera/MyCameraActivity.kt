@@ -77,7 +77,7 @@ class MyCameraActivity : AppCompatActivity(), View.OnClickListener, TextureView.
         super.onPause()
     }
 
-
+//intialize call back
     private fun initializeCameraCallback() {
         cameraStateCallbacks = object : CameraDevice.StateCallback() {
             override fun onOpened(camera: CameraDevice) {
