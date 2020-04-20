@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyCamera</string>
+    <string name="button_capture">CAPTURE</string>
+    <string name="button_ccapture">Capture Photo</string>
+    <string name="button_switch_camera">Switch Camera</string>
+    <string name="button_picture">Click Picture</string>
+    <string name="button_record_video">Record Video</string>
+</resources>
