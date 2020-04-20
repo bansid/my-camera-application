@@ -77,7 +77,7 @@ class MyCameraActivity : AppCompatActivity(), View.OnClickListener, TextureView.
         super.onPause()
     }
 
-//intialize call back
+    //intialize call back
     private fun initializeCameraCallback() {
         cameraStateCallbacks = object : CameraDevice.StateCallback() {
             override fun onOpened(camera: CameraDevice) {
@@ -260,7 +260,6 @@ class MyCameraActivity : AppCompatActivity(), View.OnClickListener, TextureView.
         isVideoRecording = false
         mediaRecorder.stop()
         mediaRecorder.reset()
-
     }
 
     private fun handleVideoRecordButtonState() {
@@ -274,7 +273,7 @@ class MyCameraActivity : AppCompatActivity(), View.OnClickListener, TextureView.
     override fun onSurfaceTextureSizeChanged(surface: SurfaceTexture?, width: Int, height: Int) {}
 
     override fun onSurfaceTextureUpdated(surface: SurfaceTexture?) {}
-
+    //destroyed
     override fun onSurfaceTextureDestroyed(surface: SurfaceTexture?): Boolean = true
 
     override fun onSurfaceTextureAvailable(surface: SurfaceTexture?, width: Int, height: Int) {
